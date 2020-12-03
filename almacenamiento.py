@@ -1,6 +1,6 @@
 def maximizar(As, D):
     optimoGlobal = []
-    while D>0:
+    while D>0 and As != []:
         optimoLocal = archivoMinimo(As)
         if(D-optimoLocal[1]<0):
             break
